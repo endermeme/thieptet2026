@@ -228,6 +228,13 @@ function App() {
                         </div>
                     </div>
                     <div className="from-label">{'from your homie ❤'}</div>
+                    <a
+                        href="https://binhtagilla.id.vn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="made-by"
+                        onClick={(e) => e.stopPropagation()}
+                    >Made by M0n0lita</a>
                 </div>
             )}
 

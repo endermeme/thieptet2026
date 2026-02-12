@@ -436,3 +436,23 @@ body {
 .vol-skip:hover {
     color: rgba(255, 255, 255, 0.5);
 }
+
+/* === MADE BY FOOTER - barely visible === */
+.made-by {
+    position: absolute;
+    bottom: 6px;
+    font-size: 8px;
+    color: rgba(255, 255, 255, 0.06);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    z-index: 3;
+    transition: color 0.3s;
+    font-family: 'Inter', sans-serif;
+    pointer-events: auto;
+    cursor: default;
+}
+
+.made-by:hover {
+    color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}

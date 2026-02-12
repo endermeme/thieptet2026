@@ -100,14 +100,14 @@ function App() {
         if (playPromise) {
             playPromise.catch(() => {
                 video.muted = true;
-                video.play().then(() => { video.muted = false; }).catch(() => {});
+                video.play().then(() => { video.muted = false; }).catch(() => { });
             });
         }
 
         const el = document.documentElement;
         const rfs = el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen;
-        if (rfs) rfs.call(el).catch(() => {});
-        if ('wakeLock' in navigator) navigator.wakeLock.request('screen').catch(() => {});
+        if (rfs) rfs.call(el).catch(() => { });
+        if ('wakeLock' in navigator) navigator.wakeLock.request('screen').catch(() => { });
 
         setStep('video');
     }, []);
@@ -128,7 +128,7 @@ function App() {
                         <div className="vol-header">
                             <div className="vol-icon">{'🔊'}</div>
                             <div className="vol-header-text">
-                                <div className="vol-site">saygex.vercel.app</div>
+                                <div className="vol-site">Thieptet2026</div>
                                 <div className="vol-perm">{'Quyền truy cập âm thanh'}</div>
                             </div>
                         </div>
